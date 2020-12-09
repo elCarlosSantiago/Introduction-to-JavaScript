@@ -293,10 +293,19 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter( /*add your code here*/ ) {
-    /*add your code here*/
+function vowelCounter(aString) {
+    let count = 0;
+    let vowels = "aeiouAEIOU";
+
+    for (let i = 0; i < aString.length; i++) {
+        if (vowels.indexOf(aString[i]) > -1) {
+            count++;
+        }
+    }
+    return count;
 }
 
+console.log("There are " + vowelCounter("Alfred, please count the vowels in the string") + " vowels in the string.")
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
